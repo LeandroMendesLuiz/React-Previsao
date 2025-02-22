@@ -1,0 +1,59 @@
+.weather-container {
+    background-color: rgba(218, 233, 233, 0.4);
+    border-radius: 25px;
+    border: 1px solid rgb(216, 216, 216, 0.4);
+    padding: 20px;
+}
+
+
+.weather-container h3, .weather-list, .weather-item {
+    font-family: "Nunito", serif;
+    font-weight: 900;
+    color: black;
+}
+
+
+.weather-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.weather-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.weather-item {
+    text-align: center;
+    background-color: rgba(218, 233, 233, 0.5);
+    border-radius: 25px;
+    border: 2px solid rgb(216, 216, 216, 0.4);
+    border-radius: 10px;
+    padding: 10px;
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .weather-list .weather-item {
+        flex: 1 1 calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 480px) {
+    .weather-list .weather-item {
+        flex: 1 1 100%; /* Ajusta a largura dos itens para telas muito pequenas */
+    }
+}
+
+.forecast-day {
+    text-transform: capitalize;
+}
+
+.forecast-description {
+    text-transform: capitalize;
+}
+
